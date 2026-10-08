@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eae7e2;
+  color: #1c1c1c;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #f5f3ef;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #1c1c1c;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #1c1c1c;
+}
+
+main {
+  padding: 30px;
+  padding-top: 120px;
+}
+
+.profil {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+img {
+  width: 350px;
+  height: 350px;
+  border-radius: 4%;
+  object-fit: cover;
+}
+
+.teskProfil {
+  max-width: 600px;
+}
+
+.btn {
+  margin-top: 20px;
+  background-color: #6645c9;
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.btn a {
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #5a3db8;
+  transform: translateY(-2px);
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #e0e0e0; /* Warna abu-abu halus */
+  margin: 40px 0; /* Jarak atas dan bawah garis */
+}
+
+.about-me {
+  display: grid;
+  place-items: center;
+  padding: 40px;
+}
+
+.Box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.Box div {
+  background-color: #f5f3ef;
+  border: 1px solid #d2cec7;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-item {
+  background-color: #f5f3ef;
+  border: 1px solid #d2cec7;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.project-item img {
+  width: 100%;
+  height: 200px;
+  border-radius: 4%;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #f5f3ef;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 15px;
+    padding-top: 100px;
+  }
+  .profil {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .fotoProfil {
+    margin: 0 auto;
+    order: -1;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .Box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Box {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    padding: 15px 15px;
+    position: static;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+}
