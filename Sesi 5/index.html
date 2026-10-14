@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Produk E-Commerce</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="text-center fw-bold">Katalog Produk Kami</h1>
+
+    <div class="text-center my-4 my-md-4 my-lg-4">
+      <button
+        class="btn bg-transparent border rounded-2 btn-custom"
+        onclick="filterProduk('semua')"
+      >
+        Semua
+      </button>
+      <button
+        class="btn bg-transparent border rounded-2 btn-custom"
+        onclick="filterProduk('Elektronik')"
+      >
+        Elektronik
+      </button>
+      <button
+        class="btn bg-transparent border rounded-2 btn-custom"
+        onclick="filterProduk('Pakaian')"
+      >
+        Pakaian
+      </button>
+      <button
+        class="btn bg-transparent border rounded-2 btn-custom"
+        onclick="filterProduk('Sepatu')"
+      >
+        Sepatu
+      </button>
+    </div>
+
+    <div id="product-list" class="product-container"></div>
+    <!-- Menghubungkan ke JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
