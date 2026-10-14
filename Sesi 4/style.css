@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #0c0c0d;
+  color: #ffffff;
+  font-family: poppins, sans-serif;
+  line-height: 1.6;
+  padding-top: 80px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  list-style: none;
+}
+
+p {
+  color: #999999;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #b57edc !important;
+}
+.navbar {
+  background-color: #0c0c0d;
+}
+/* Di Bantu AI */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23b57edc' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler {
+  border: none !important;
+  outline: none !important; /* Menghilangkan garis fokus bawaan browser */
+}
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  box-shadow: none !important;
+}
+
+/* Memastikan tombol Contact Me memiliki latar belakang lavender yang solid dan tidak transparan */
+.navbar-nav .btn-primary.nav-link {
+  background-color: #b57edc !important;
+  border-color: #b57edc !important;
+  color: #ffffff !important;
+}
+
+Efek saat kursor diarahkan ke tombol
+.navbar-nav .btn-primary.nav-link:hover {
+  background-color: #9f65c9 !important;
+  border-color: #9f65c9 !important;
+  color: #ffffff !important;
+}
+/*  */
